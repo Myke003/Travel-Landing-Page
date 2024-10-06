@@ -11,6 +11,8 @@
     --moss-green: #8f9946ff;
     --pakistan-green: #232e04ff;
     --brilliant-orange: #FF5722;
+    --azul-pastel: #d8e5e8;
+    --tierra: #d6bda6;
 }
 
 * {
@@ -23,7 +25,7 @@
 
 /* Cabecera */
 header {
-    position: fixed;
+    position: absolute;
     width: 100%;
     height: fit-content;
     padding: 0.2rem 0.2rem;
@@ -45,9 +47,6 @@ header {
     transition: 150ms;
 }
 
-.logo:hover{
-    color: var(--moss-green);
-}
 
 .nav-menu {
     display: flex;
@@ -60,11 +59,14 @@ header {
     position: relative; /* Asegúrate de que cada li sea relativo */
 }
 
+
 .nav-menu li a {
     color: var(--alabaster);
     text-decoration: none;
     font-size: 18px;
     text-transform: uppercase;
+    letter-spacing: 1.5px;
+    font-weight: bold;
 }
 
 .nav-menu li a::before {
@@ -75,13 +77,11 @@ header {
     position: absolute;
     left: 0;
     bottom: -5px; /* Ajusta esta posición según lo necesites */
-    transition: 150ms;
+    transition: 200ms;
 }
 
 .nav-menu li a:hover::before{
     width: 100%;
-    
-
 }
 
 /* Botón login */
@@ -103,9 +103,6 @@ header {
     color: var(--alabaster);
     background-color: var(--blue-green);
 }
-
-
-
 /* Landing page */
 .landing-container {
     display: flex;
@@ -142,4 +139,165 @@ header {
 
 .landing-btn:hover {
     background-color: var(--brilliant-orange);
+}
+
+/*galeria
+.galery-container {
+    height: 100vh;
+    background-color: var(--tierra);
+}
+*/
+.prices {
+    padding-top: 2.5rem;
+    height: 100vh;
+    background-color: var(--alabaster);
+}
+
+.text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-wrapper{
+    display: grid;
+    margin: 2em;
+    grid-template-columns: repeat(3, 0.5fr);
+    gap: 3rem;
+}
+
+.package{
+    display: flex;
+    flex-direction: column;
+    margin-top:3rem ;
+    height: 400px;
+    background-color: var(--tierra);
+    border-radius: 10px;
+}
+
+/*imagen de las cards*/
+.img-package{
+    display: flex;
+    height: 60%;
+    width: 100%;
+ 
+    /*margin: 0.625rem;*/
+}
+
+#hotel_1 {
+    background-image: url('../resources/hotel_1.jpg');
+    background-size: cover;
+}
+
+#hotel_2 {
+    background-image: url('../resources/hotel_2.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+#hotel_3 {
+    background-image: url('../resources/hotel_3.jpg');
+    background-size: cover;
+    background-position: center;
+}
+/*texto de las cards*/
+.text-package{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+    height: 40%;
+    margin: 0.5rem;
+}
+.text-package p{
+    display: flex;
+    justify-content: center;
+    gap: 0.625rem;
+}
+
+.pack-btn{
+    font-size: 18px;
+    width: 80px;
+    cursor: pointer;
+    background-color: var(--brilliant-orange);
+    border: none;
+    color: var(--alabaster);
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+/*Configuración del acerca de*/
+
+.about-faq {
+    margin: 2em;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    font-size: 16px;
+}
+
+.faq{
+    display: grid;
+    gap:1.25rem;
+}
+
+/*Configuración del footer*/
+
+footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: var(--black-olive);
+}
+
+.media-container li {
+    display: inline-block;
+    margin: 25px;
+    font-size: 25px;
+    color: var(--alabaster);
+    opacity: 60%;
+    cursor: pointer;
+    transition: transform 150ms ease;
+}
+
+.media-container li:hover {
+    opacity: 100%;
+    color: white;
+    transform: translateY(-5px)
+}
+
+.footer-text-container, .legal-information{
+    color: var(--alabaster);
+    opacity: 60%;
+}
+
+.footer-text-container h4{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;    
+    font-size: 28px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 5px;
+}
+
+.legal-information{
+    display: flex;
+    margin-top: 20px;
+    gap: 30px;
+    margin-bottom: 20px;
+}
+
+.legal-information li{
+    cursor: pointer;
+}
+
+.legal-information li:hover{
+    color: white;
 }

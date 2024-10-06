@@ -15,10 +15,12 @@
 <body>
     <header>
         <nav class="main-menu">
-            <h1 href="index.html" class="logo">LOGO</h1>
+            <h1 href="index.html" class="logo">Hotel Mar Azul</h1>
             <ul class="nav-menu">
                 <li><a href="index.html">Inicio</a></li>
+                <!--
                 <li><a href="#">Galeria</a></li>
+                -->
                 <li><a href="#">Precios</a></li>
                 <li><a href="#">Sobre nosotros</a></li>
                 <button id="login">Iniciar sesion</button>
@@ -27,60 +29,134 @@
     </header>
 
     <section class="landing-container">
-        <h2 class="main-tense">¡Explora el mundo con nosotros! Tu aventura comienza aquí.</h2>
+        <h2 class="main-tense">¡Haz de tus vacaciones una experiencia inolvidable frente al mar!</h2>
         <button class="landing-btn">Reserva ahora</button>
     </section>
-
     <main>
+        <!--
         <section class="galery-container">
             <h2>Galeria de viajes</h2>
             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deleniti ipsam suscipit, placeat error ullam, dignissimos vero quos aut, labore assumenda maiores earum ratione sit nisi voluptates? Alias nobis fugit cupiditate placeat impedit!</p>
         </section>
+        -->
 
         <section class="prices">
-            <h2>Nuestros paquetes de viaje</h2>
-            <p>¡Encuentra el paquete perfecto para tu próxima aventura!</p>
-
-            <div class="package">
-                <h3>Paquete Básico</h3>
-                <p>Escapada de fin de semana con alojamiento y actividades. <strong>$299</strong></p>
+            <div class="text">
+                <h2>Nuestros paquetes de viaje</h2>
+                <p>¡Encuentra el paquete perfecto para tu próxima aventura!</p>
             </div>
 
-            <div class="package">
-                <h3>Paquete Estándar</h3>
-                <p>Viaje de una semana con tours guiados incluidos. <strong>$499</strong></p>
-            </div>
+            <div class="card-wrapper">
 
-            <div class="package">
-                <h3>Paquete Premium</h3>
-                <p>Experiencia de lujo con todo incluido. <strong>$799</strong></p>
+                <div class="package">
+                    <div class="img-package" id="hotel_1">
+                    </div>
+                    <div class="text-package">
+                        <h3>Paquete Relax Total</h3>
+                        <p>Escapa y disfruta de 3 noches en una habitación con vista al mar, desayuno buffet, un masaje de spa y una cena romántica en la playa.</p>
+                        <button class="pack-btn">$399</button>
+                    </div>
+                </div>
+                <div class="package">
+                    <div class="img-package" id="hotel_2"></div> 
+                    <div class="text-package">
+                        <h3>Paquete Aventura Costera</h3>
+                        <p>Vive la emoción con 4 noches de alojamiento, desayuno diario, snorkel y clases de surf. ¡Aventura y diversión garantizadas!
+                        </p>
+                        <button class="pack-btn">$499</button>
+                    </div>
+                </div>
+    
+                <div class="package">
+                    <div class="img-package" id="hotel_3">
+                    </div>
+                    <div class="text-package">
+                        <h3>Paquete Familiar Playa</h3>
+                        <p>Crea recuerdos en familia con 5 noches de alojamiento, desayuno diario y actividades para niños. ¡Diversión para todos en la playa!</p>
+                        <button class="pack-btn">$799</button>
+                    </div>
+                </div>
             </div>
         </section>
 
-        <section class="about">
-            <h2>Sobre Nosotros</h2>
-            <p>Somos un equipo apasionado por los viajes, comprometido a brindar experiencias únicas y memorables a nuestros clientes. Con años de experiencia en la industria, conocemos los mejores destinos y actividades.</p>
+        <section class="about-faq">
+            <div class="about"> <!--sección del acerca de-->
+                <h2>Sobre Nosotros</h2>
+                <p>Bienvenido al Hotel Mar Azul, tu refugio tropical junto al mar. Ubicado en una de las playas más hermosas, nuestro hotel combina la comodidad moderna con la belleza natural del entorno.
+
+                Disfruta de impresionantes vistas al océano desde nuestras habitaciones, relájate en nuestras instalaciones y déjate consentir por nuestro amable personal. En Hotel Mar Azul, nos dedicamos a ofrecerte una experiencia inolvidable, donde cada detalle está diseñado para que te sientas como en casa.
+                    
+                Ya sea que busques aventuras acuáticas o momentos de tranquilidad bajo el sol, estamos aquí para hacer de tu estancia una experiencia única. ¡Te esperamos para crear recuerdos inolvidables en el paraíso!</p>
+            </div>
+
+            <div class="faq"> <!--sección de preguntas frecuentes-->
+                <h2>Preguntas Frecuentes (FAQ)</h2>
+                <div class="question">
+                    <h3>1. ¿Cuál es la política de cancelación del hotel?</h3>
+                    <p>Ofrecemos una política de cancelación flexible. Puedes cancelar tu reserva hasta 48 horas antes de tu llegada sin cargo. Consulta nuestras condiciones específicas al hacer la reserva.</p>
+                </div>
+                <div class="question">
+                    <h3>2. ¿El hotel ofrece servicio de transporte desde el aeropuerto?</h3>
+                    <p> Sí, ofrecemos servicio de transporte desde y hacia el aeropuerto por un costo adicional. Puedes solicitar este servicio al momento de hacer tu reserva.</p>
+                </div>
+                <div class="question">
+                    <h3>3. ¿Hay opciones de actividades recreativas disponibles?</h3>
+                    <p> ¡Por supuesto! En <strong>Hotel Mar Azul</strong>, ofrecemos diversas actividades acuáticas, excursiones y servicios de spa para que disfrutes al máximo tu estancia. Pregunta en la recepción para más detalles.</p>
+                </div>
+                <div class="question">
+                    <h3>4. ¿El hotel cuenta con acceso a internet?</h3>
+                    <p> Sí, ofrecemos Wi-Fi gratuito en todas nuestras instalaciones, incluyendo habitaciones y áreas comunes.</p>
+                </div>
+                <div class="question">
+                    <h3>5. ¿Se permiten mascotas en el hotel?</h3>
+                    <p>Lamentablemente, no permitimos mascotas en el hotel para garantizar la comodidad de todos nuestros huéspedes.</p>
+                </div>
         </section>
 
         <section class="faq">
-            <h2>Preguntas Frecuentes</h2>
-            <div class="question">
-                <h3>¿Qué tipo de viajes ofrecen?</h3>
-                <p>Ofrecemos una amplia variedad de viajes, desde escapadas de fin de semana hasta aventuras personalizadas.</p>
-            </div>
-            <div class="question">
-                <h3>¿Puedo modificar mi reserva?</h3>
-                <p>Sí, ofrecemos opciones flexibles para que puedas adaptar tu viaje a tus necesidades.</p>
-            </div>
-            <div class="question">
-                <h3>¿Cómo puedo contactar al servicio al cliente?</h3>
-                <p>Puedes contactarnos a través de nuestro formulario en línea o llamándonos directamente.</p>
-            </div>
+           
         </section>        
     </main>
+    <footer>
+        <ul class="media-container">
+            <li>
+                <ion-icon name="logo-facebook"></ion-icon> 
+            </li>
+            <li>
+                <ion-icon name="logo-youtube"></ion-icon>
+            </li>
+            <li>
+                <ion-icon name="logo-instagram"></ion-icon>
+            </li>
+            <li>
+                <ion-icon name="logo-tiktok"></ion-icon>
+            </li>
+            <li>
+                <ion-icon name="logo-whatsapp"></ion-icon>
+            </li>
+        </ul>
 
+        <ul class="footer-text-container">
+            <li>
+                <h4>hotel mar azul</h4>
+            </li>
+            <li>
+                <p>&copy; <span id="year"></span> Sitio web creado por Miguel. Todos los derechos reservados.</p>
+            </li>
+        </ul>
+
+        <ul class="legal-information">
+            <li>Información legal</li>
+            <span>|</span>
+            <li>Política de privacidad</li>
+        </ul>
+    </footer>
     
-
+    <!--Javscript-->
     <script src="js/app.js"></script>
+
+    <!--Ionicons-->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </body>
 </html>

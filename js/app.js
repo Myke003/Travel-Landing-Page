@@ -1,2 +1,2 @@
-const galeria_section = document.getElementsByClassName('galery-container');
+document.getElementById('year').textContent = new Date().getFullYear();
 
